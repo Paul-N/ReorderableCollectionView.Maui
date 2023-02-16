@@ -92,9 +92,14 @@ namespace ReorderableCollectionView.Maui
 		public object Group(NSIndexPath indexPath)
 		{
 			return null;
-		}
+        }
 
-		public int ItemCountInGroup(nint group)
+        public IItemsViewSource GroupItemsViewSource(NSIndexPath indexPath)
+        {
+            return null;
+        }
+
+        public int ItemCountInGroup(nint group)
 		{
 			if (group > 0)
 			{

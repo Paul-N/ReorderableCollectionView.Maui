@@ -24,9 +24,14 @@ namespace ReorderableCollectionView.Maui
 		public object Group(NSIndexPath indexPath)
 		{
 			throw new IndexOutOfRangeException("IItemsViewSource is empty");
-		}
+        }
 
-		public NSIndexPath GetIndexForItem(object item)
+        public IItemsViewSource GroupItemsViewSource(NSIndexPath indexPath)
+        {
+            throw new IndexOutOfRangeException("IItemsViewSource is empty");
+        }
+
+        public NSIndexPath GetIndexForItem(object item)
 		{
 			throw new IndexOutOfRangeException("IItemsViewSource is empty");
 		}

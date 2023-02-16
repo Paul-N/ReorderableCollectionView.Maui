@@ -96,8 +96,8 @@ namespace ReorderableCollectionView.Maui
 			{
 				if (!IsPlatformEnabled)
 					return new SizeRequest(new Size(-1, -1));
-
-				return Device.PlatformServices.GetNativeSize(this, widthConstraint, heightConstraint);
+				
+				return DependencyService.Get<IPlatformSizeService>().GetPlatformSize(this, widthConstraint, heightConstraint);
 			}
 			else
 			{

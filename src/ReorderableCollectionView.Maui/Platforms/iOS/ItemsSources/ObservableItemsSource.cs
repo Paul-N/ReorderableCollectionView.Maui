@@ -76,7 +76,12 @@ namespace ReorderableCollectionView.Maui
 			return null;
 		}
 
-		public NSIndexPath GetIndexForItem(object item)
+        public IItemsViewSource GroupItemsViewSource(NSIndexPath indexPath)
+        {
+            return null;
+        }
+
+        public NSIndexPath GetIndexForItem(object item)
 		{
 			for (int n = 0; n < Count; n++)
 			{
